@@ -6,15 +6,13 @@ My Python Monorepo
 
 Project Structure
 .
-├── common/                # Shared modules used across all projects
+├── common/                     # Shared modules used across all projects
 ├── simulation/
-│   ├── project-alpha/     # Analysis for Client A
-│   └── project-beta/      # Automation for Team B
-├── notebooks/             # Shared Jupyter Notebooks for research
-├── pyproject.toml         # The "Brain" that links everything together
-└── .gitignore             # Keeps the repo clean
-
-
+│   ├── EmergencyDepartment/    # Simulation for emergency department
+│   └── PortTerminal/           # Simulation for port terminal
+├── notebooks/                  # Shared Jupyter Notebooks for research
+├── pyproject.toml              # The "Brain" that links everything together
+└── .gitignore                  # Keeps the repo clean
 
 Getting Started (Setup)
 
@@ -22,18 +20,18 @@ To ensure that the projects can see the common folder, you must install the repo
 
 1. Create and Activate Virtual Environment
 PowerShell:
-# Create the environment
-python -m venv .venv
+    # Create the environment
+    python -m venv .venv
 
 # Activate (Windows PowerShell)
-.\.venv\Scripts\Activate.ps1
+    .\.venv\Scripts\Activate.ps1
 
 2. Install in Editable Mode
 
 This step "links" the common and projects folders so they can be imported from anywhere.
 
 PowerShell:
-pip install -e .
+    pip install -e .
 
 
 
