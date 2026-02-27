@@ -1,0 +1,15 @@
+# Python environment
+.venv/
+
+# Caches and temporary files
+__pycache__/
+*.pyc
+
+# Python distribution/metadata folders
+*.egg-info/
+build/
+dist/
+
+# Local files for testing purposes
+testing.py
+notebooks/

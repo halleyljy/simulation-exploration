@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my_unified_workspace"
+version = "0.1.0"
+description = "A multi-project workspace with shared modules"
+dependencies = [
+    "numpy",
+    "pandas",
+	"matplotlib",
+	"pydantic",
+	"simpy"
+]# Shared dependencies downloaded
+
+[tool.setuptools]
+packages = [
+	"common",
+	"simulation"
+]# Shared folder and modules to be used by user
+
+py-modules = [
+	"testing"
+]# Shared module for testing purposes

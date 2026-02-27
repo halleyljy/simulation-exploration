@@ -1,0 +1,51 @@
+{
+	"output_directory": "C:\\Halley Stuff\\Others\\python project test",
+	"scenario_name": "smoke_test",
+	"total_replications": 12,
+	"simulation_days": 14,
+	"seed_value": 1000,
+	"stats_collection_interval_minutes": 60,
+	"branch_probability_map":{
+		"fast_track_probability": 0.3,
+		"fast_track_lab_probability": 0.1,
+		"main_ed_lab_probability": 0.3,
+		"main_ed_admission_probability": 0.2
+	},
+	"resources":{
+		"fast_track_doctor": 1,
+		"fast_track_nurse": 2,
+		"main_ed_doctor": 2,
+		"main_ed_nurse": 4,
+		"ed_beds": 30,
+		"ed_labs": 1
+	},
+	"time_parameter": {
+		"patient_arrival_rate_per_hour": 4.0,
+		"service_delay_minutes": {
+			"fast_track": {
+				"min_value": 3.0,
+				"mean": 10.0
+			},
+			"main_ed": {
+				"min_value": 5.0,
+				"mean": 30.0
+			}
+		},
+		"lab_delay_minutes": {
+			"fast_track": {
+				"min_value": 2.0,
+				"mean": 10.0
+			},
+			"main_ed": {
+				"min_value": 2.0,
+				"mean": 30.0
+			}
+		},
+		"transfer_delay_minutes": {
+			"main_ed": {
+				"min_value": 15.0,
+				"mean": 480.0
+			}
+		}
+	}
+}
